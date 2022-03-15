@@ -11,6 +11,8 @@ import {
 
 type RootStackParamList = {
   Startup: undefined
+  VerifyNumber: undefined
+  PinNumber: undefined
   Home: undefined
 }
 
@@ -41,5 +43,11 @@ export function navigateAndSimpleReset(name: string, index = 0) {
         routes: [{ name }],
       }),
     )
+  }
+}
+
+export function pop() {
+  if (navigationRef.isReady()) {
+    navigationRef.goBack()
   }
 }

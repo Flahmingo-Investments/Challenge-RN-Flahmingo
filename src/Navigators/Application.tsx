@@ -2,7 +2,11 @@ import React from 'react'
 import { SafeAreaView, StatusBar } from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { NavigationContainer } from '@react-navigation/native'
-import { StartupContainer } from '@/Containers'
+import {
+  WelcomeContainer,
+  VerifyNumberContainer,
+  PinNumberContainer,
+} from '@/Containers'
 import { useTheme } from '@/Hooks'
 import MainNavigator from './Main'
 import { navigationRef } from './utils'
@@ -19,7 +23,9 @@ const ApplicationNavigator = () => {
       <NavigationContainer theme={NavigationTheme} ref={navigationRef}>
         <StatusBar barStyle={darkMode ? 'light-content' : 'dark-content'} />
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="Startup" component={StartupContainer} />
+          <Stack.Screen name="Startup" component={WelcomeContainer} />
+          <Stack.Screen name="VerifyNumber" component={VerifyNumberContainer} />
+          <Stack.Screen name="PinNumber" component={PinNumberContainer} />
           <Stack.Screen
             name="Main"
             component={MainNavigator}

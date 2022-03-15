@@ -28,5 +28,13 @@ export default function ({ Colors, Gutters, Layout }: ThemeCommonParams) {
       borderWidth: 2,
       borderColor: Colors.primary,
     },
+    buttonRounded: {
+      width: 250,
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: 56,
+      backgroundColor: '#FF63AF',
+      borderRadius: 16,
+    },
   })
 }

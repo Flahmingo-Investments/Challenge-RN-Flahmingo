@@ -44,6 +44,9 @@ export default function ({ MetricsSizes }: ThemeVariables): ThemeGutters {
           marginHorizontal: value,
         },
         /* Paddings */
+        [`${key}Padding`]: {
+          padding: value,
+        },
         [`${key}BPadding`]: {
           paddingBottom: value,
         },

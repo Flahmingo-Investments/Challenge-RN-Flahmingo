@@ -50,5 +50,21 @@ export default function ({ FontSize, Colors }: ThemeVariables): ThemeFonts {
     textRight: {
       textAlign: 'right',
     },
+    buttonText: {
+      fontSize: FontSize.small,
+      color: Colors.buttonText,
+    },
+    textLightBlue: {
+      color: Colors.textLightBlue,
+    },
+    textPurple: {
+      color: Colors.purple,
+    },
+    textBlack: {
+      color: Colors.black,
+    },
+    textPink: {
+      color: Colors.pink,
+    },
   })
 }

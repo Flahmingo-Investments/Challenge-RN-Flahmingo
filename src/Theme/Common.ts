@@ -21,6 +21,12 @@ export default function ({ Colors, ...args }: ThemeCommonParams) {
       backgroundReset: {
         backgroundColor: Colors.transparent,
       },
+      backgroundColorWhite: {
+        backgroundColor: Colors.white,
+      },
+      backgroundGray: {
+        backgroundColor: Colors.gray,
+      },
       textInput: {
         borderWidth: 1,
         borderColor: Colors.text,
@@ -30,6 +36,21 @@ export default function ({ Colors, ...args }: ThemeCommonParams) {
         textAlign: 'center',
         marginTop: 10,
         marginBottom: 10,
+      },
+      phoneNumberInput: {
+        flexDirection: 'row',
+        width: 283,
+        backgroundColor: Colors.white,
+        borderRadius: 16,
+        elevation: 5,
+        shadowColor: 'black',
+        shadowOpacity: 0.26,
+        shadowOffset: { width: 0, height: 2 },
+        shadowRadius: 10,
+        paddingVertical: 18,
+        alignItems: 'center',
+        alignSelf: 'center',
+        paddingHorizontal: 20,
       },
     }),
   }

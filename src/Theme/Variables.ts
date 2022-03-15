@@ -24,6 +24,12 @@ export const Colors: ThemeColors = {
   primary: '#E14032',
   success: '#28a745',
   error: '#dc3545',
+  buttonText: '#F8F8FF',
+  textLightBlue: '#4C5980',
+  purple: '#7265E3',
+  black: 'black',
+  pink: '#FF63AF',
+  gray: 'gray',
 }
 
 export const NavigationColors: Partial<ThemeNavigationColors> = {
